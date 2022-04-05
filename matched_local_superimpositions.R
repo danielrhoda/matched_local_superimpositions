@@ -61,7 +61,7 @@ n <- dim(array)[3]
 M <- array
 
 if(dim(ref)[[2]]==3){ref.centroid <- c(mean(ref[,1]),mean(ref[,2]),mean(ref[,3]))}
-else{ref.centroid <- c(mean(ref[,1]),mean(ref[,2]))}
+else{ref.centroid <- c(mean(ref[,1]),mean(ref[,2]))} # looking back I shoulda just used 'centroid1' but who cares
 ref.cSize <- cSize(ref)
 
 M.ts <- translate.lm(M*ref.cSize,ref.centroid)

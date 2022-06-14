@@ -41,6 +41,7 @@ translate.lm <- function(coords,centroid = c(0,0,0)){
 
 # matchLM 
   # scales, translates, and rotates, a landmark configuration to a reference 
+  # i.e., an ordinary Procrustes superimposition 
 # array: a (p x k x n) array of the locally superimposed landmark configurations
 # ref:  a (p x k) matrix of the lm of the corresponding bone from the reference configuration
 
